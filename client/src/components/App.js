@@ -1,6 +1,6 @@
 import './App.css';
 import Navigation from './layout/Navigation/Navigation'
-import ProductList from './layout/ProductList/ProductList'
+import ProductsList from './layout/ProductsList/ProductsList'
 import Footer from './layout/Footer/Footer'
 
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Navigation />
       <main>
-        <ProductList />
+        <ProductsList />
       </main>
       <Footer></Footer>
     </>
