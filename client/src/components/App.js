@@ -1,10 +1,19 @@
-
 import './App.css';
+import Navigation from './layout/Navigation/Navigation'
+import ProductList from './layout/ProductList/ProductList'
+import Footer from './layout/Footer/Footer'
+
 
 function App() {
   return (
-    <h1>Hello</h1>
-  );
+    <>
+      <Navigation />
+      <main>
+        <ProductList />
+      </main>
+      <Footer></Footer>
+    </>
+  )
 }
 
 export default App;
