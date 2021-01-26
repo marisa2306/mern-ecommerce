@@ -1,6 +1,7 @@
 import './ProductCard.css'
 import { Link } from 'react-router-dom'
 import { Col, Card } from 'react-bootstrap'
+import Rating from './Rating'
 
 const ProductCard = props => {
 
@@ -16,13 +17,7 @@ const ProductCard = props => {
                     <Card.Title className="mb-2"> {product.name}</Card.Title>
                     <Card.Text className="mb-2">
                         <p className="">{product.description.substring(0, 100)}...</p>
-                        <div class="rating">
-                            <span> <i class="fa fa-star"></i> </span>
-                            <span> <i class="fa fa-star"></i> </span>
-                            <span> <i class="fa fa-star"></i> </span>
-                            <span> <i class="fa fa-star"></i> </span>
-                            <span> <i class="fa fa-star"></i> </span>
-                        </div>
+                        <Rating></Rating>
                         <p className="">{product.price} €</p>
                     </Card.Text>
 
