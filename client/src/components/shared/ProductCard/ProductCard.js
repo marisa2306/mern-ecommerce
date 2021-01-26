@@ -17,7 +17,7 @@ const ProductCard = props => {
                     <Card.Title className="mb-2"> {product.name}</Card.Title>
                     <Card.Text className="mb-2">
                         <p className="">{product.description.substring(0, 100)}...</p>
-                        <Rating></Rating>
+                        <Rating rating={product.rating} numReviews={product.numReviews} />
                         <p className="">{product.price} €</p>
                     </Card.Text>
 
