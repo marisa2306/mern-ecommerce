@@ -1,19 +1,21 @@
-import './Card.css'
+import './ProductCard.css'
 import { Link } from 'react-router-dom'
 import { Col, Card } from 'react-bootstrap'
 
-const ProductCard = ({ productId, name, manufacturer, description, color, price, imageFileName, screen, processor, ram }) => {
+const ProductCard = props => {
+
+    const { product } = props
 
     return (
 
 
         < Col sm={6} md={4} lg={3} >
             <Card className=" mt-5">
-                <Card.Img variant="top" src={imageFileName} alt={name} />
+                <Card.Img variant="top" src={product.image} alt={product.name} />
                 <Card.Body>
-                    <Card.Title className="mb-2"> {name}</Card.Title>
+                    <Card.Title className="mb-2"> {product.name}</Card.Title>
                     <Card.Text className="mb-2">
-                        <p className="">{description.substring(0, 100)}...</p>
+                        <p className="">{product.description.substring(0, 100)}...</p>
                         <div class="rating">
                             <span> <i class="fa fa-star"></i> </span>
                             <span> <i class="fa fa-star"></i> </span>
@@ -21,7 +23,7 @@ const ProductCard = ({ productId, name, manufacturer, description, color, price,
                             <span> <i class="fa fa-star"></i> </span>
                             <span> <i class="fa fa-star"></i> </span>
                         </div>
-                        <p className="">{price} €</p>
+                        <p className="">{product.price} €</p>
                     </Card.Text>
 
                     <Link to='/product' className="btn btn-block btn-outline-secondary">View More</Link>

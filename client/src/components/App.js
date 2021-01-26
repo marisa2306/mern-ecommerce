@@ -1,6 +1,6 @@
 import './App.css';
 import Navigation from './layout/Navigation/Navigation'
-import ProductsList from './layout/ProductsList/ProductsList'
+import ProductsList from './pages/ProductsList/ProductsList'
 import Footer from './layout/Footer/Footer'
 
 
