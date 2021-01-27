@@ -14,7 +14,6 @@ const ProductList = () => {
                 <Row>
                     {data.products.map(product =>
                         <ProductCard key={product._id} product={product} />
-
                     )}
                 </Row>
             </Container>
