@@ -18,7 +18,9 @@ const ProductDetails = props => {
                     </Col>
                     <Col>
                         <h1>{product.name}</h1>
-                        <Rating></Rating>
+                        <p>{product.description}</p>
+                        <Rating product={product.rating} numReviews={product.numReviews}></Rating>
+                        <p><strong>Price:</strong> $ {product.price}</p>
                     </Col>
                     <Col></Col>
                 </Row>
