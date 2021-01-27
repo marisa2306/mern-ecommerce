@@ -1,8 +1,9 @@
 import './App.css';
 import Navigation from './layout/Navigation/Navigation'
 import ProductsList from './pages/ProductsList/ProductsList'
+import ProductsList from './pages/ProductDetails/ProductDetails'
 import Footer from './layout/Footer/Footer'
-
+import { Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -10,7 +11,10 @@ function App() {
     <>
       <Navigation />
       <main>
-        <ProductsList />
+        <Switch>
+          <Route exact path="/" component={<ProductsList />} />
+          <Route path="/product/:id" component={<ProductDetails />} />
+        </Switch>
       </main>
       <Footer></Footer>
     </>
