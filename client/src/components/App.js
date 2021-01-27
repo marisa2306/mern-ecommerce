@@ -1,7 +1,7 @@
 import './App.css';
 import Navigation from './layout/Navigation/Navigation'
 import ProductsList from './pages/ProductsList/ProductsList'
-import ProductsList from './pages/ProductDetails/ProductDetails'
+import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Footer from './layout/Footer/Footer'
 import { Switch, Route } from 'react-router-dom'
 
